@@ -7,7 +7,7 @@ export function changeTableFilled(idResto, idTable) {
 
     try {
 
-      var json = await axios.post(`http://restobares-app-api.herokuapp.com/resto/${idResto}/table/${idTable}/filledTable`, {
+      var json = await axios.post(`https://dingbell.onrender.com/resto/${idResto}/table/${idTable}/filledTable`, {
         state : "filled"
       });
 

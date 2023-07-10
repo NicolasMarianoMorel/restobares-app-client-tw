@@ -6,7 +6,7 @@ export function getMenuAdmin(idResto, token) {
   return async function(dispatch) {
 
     try {
-      var json = await axios.get(`https://restobares-app-api.herokuapp.com/resto/${idResto}/staff/menu`, {
+      var json = await axios.get(`https://dingbell.onrender.com/resto/${idResto}/staff/menu`, {
         headers: {
           'Authorization': `Bearer ${token}`
         }

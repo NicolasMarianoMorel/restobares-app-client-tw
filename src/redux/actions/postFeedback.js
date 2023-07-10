@@ -7,7 +7,7 @@ export function postFeedback(idResto, idTable, comment, rating) {
 
     try {
 
-      var json = await axios.post(`http://restobares-app-api.herokuapp.com/resto/${idResto}/table/${idTable}/feedback`, {
+      var json = await axios.post(`https://dingbell.onrender.com/resto/${idResto}/table/${idTable}/feedback`, {
         comment,
         rating
       });

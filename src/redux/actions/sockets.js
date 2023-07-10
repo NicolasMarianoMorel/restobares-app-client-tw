@@ -1,5 +1,5 @@
 import io from 'socket.io-client';
-const socket = io('https://restobares-app-api.herokuapp.com');
+const socket = io('https://dingbell.onrender.com');
 
 function joinResto(idResto) {
 	  socket.emit('joinResto',idResto);

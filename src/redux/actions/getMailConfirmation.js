@@ -7,7 +7,7 @@ export function getMailConfirmation(token) {
 
     try {
         console.log("TOKEN",token)
-      var json = await axios.get(`https://restobares-app-api.herokuapp.com/confirmation/${token}`);
+      var json = await axios.get(`https://dingbell.onrender.com/confirmation/${token}`);
 
       return dispatch({
         type: ActionTypes.GET_MAIL_CONFIRMATION,

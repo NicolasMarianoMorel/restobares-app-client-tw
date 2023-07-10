@@ -6,7 +6,7 @@ export function logout(logoutCode) {
   return async function(dispatch) {
 
     try {
-      var json = await axios.post("http://restobares-app-api.herokuapp.com/logout", {
+      var json = await axios.post("https://dingbell.onrender.com/logout", {
         logoutCode
       });
 

@@ -7,7 +7,7 @@ export function putMenu(idResto, idProduct, menuItem, token) {
 
     try {
 
-      var json = await axios.put(`http://restobares-app-api.herokuapp.com/resto/${idResto}/admin/menu/${idProduct}`, menuItem, {
+      var json = await axios.put(`https://dingbell.onrender.com/resto/${idResto}/admin/menu/${idProduct}`, menuItem, {
         headers: {
           'Authorization': `Bearer ${token}`
         }

@@ -9,7 +9,7 @@ export function putAccount(idResto, body, token) {
 
     try {
 
-      var json = await axios.put(`http://restobares-app-api.herokuapp.com/resto/${idResto}/admin/account`, body, {
+      var json = await axios.put(`https://dingbell.onrender.com/resto/${idResto}/admin/account`, body, {
         headers: {
           'Authorization': `Bearer ${token}`
         }

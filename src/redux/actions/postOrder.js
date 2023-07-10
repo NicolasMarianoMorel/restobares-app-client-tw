@@ -7,7 +7,7 @@ export function postOrder(payload, idResto, idTable) {
 
     try {
 
-      var json = await axios.post(`http://restobares-app-api.herokuapp.com/resto/${idResto}/table/${idTable}/order`, payload);
+      var json = await axios.post(`https://dingbell.onrender.com/resto/${idResto}/table/${idTable}/order`, payload);
 
       return dispatch({
         type: ActionTypes.POST_ORDER,

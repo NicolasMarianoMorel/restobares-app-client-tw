@@ -7,7 +7,7 @@ export function deleteProductFromTable(idResto, idTable, productId, quantity, to
 
     try {
 
-      var json = await axios.delete(`http://restobares-app-api.herokuapp.com/resto/${idResto}/staff/tables`, 
+      var json = await axios.delete(`https://dingbell.onrender.com/resto/${idResto}/staff/tables`, 
       {
         data: {
           tableId: `${idTable}`,

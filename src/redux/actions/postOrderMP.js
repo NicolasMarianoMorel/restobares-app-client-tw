@@ -7,7 +7,7 @@ export function postOrderToMP(idResto, idTable, tip) {
 
     try {
 
-      var json = await axios.post(`http://restobares-app-api.herokuapp.com/resto/${idResto}/table/${idTable}/payment`, {
+      var json = await axios.post(`https://dingbell.onrender.com/resto/${idResto}/table/${idTable}/payment`, {
         state: "pay_online",
         tip
       });

@@ -6,7 +6,7 @@ export function callStaff(idResto, idTable) {
   return async function(dispatch) {
     
     try {
-      await axios.put(`http://restobares-app-api.herokuapp.com/resto/${idResto}/table/${idTable}/order`);
+      await axios.put(`https://dingbell.onrender.com/resto/${idResto}/table/${idTable}/order`);
 
       return dispatch({
         type: ActionTypes.PUT_CALL_STAFF,

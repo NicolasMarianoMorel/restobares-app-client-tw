@@ -6,7 +6,7 @@ export function getPasswordRecover(email) {
   return async function(dispatch) {
 
     try {
-      var json = await axios.post(`https://restobares-app-api.herokuapp.com/recover`, {
+      var json = await axios.post(`https://dingbell.onrender.com/recover`, {
         email
       });
       

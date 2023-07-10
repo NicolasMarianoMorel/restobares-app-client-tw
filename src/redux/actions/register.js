@@ -7,7 +7,7 @@ export function register(clientInfo) {
 
     try {
 
-      var json = await axios.post(`http://restobares-app-api.herokuapp.com/register`, clientInfo);
+      var json = await axios.post(`https://dingbell.onrender.com/register`, clientInfo);
 
       return dispatch({
         type: ActionTypes.POST_REGISTER,

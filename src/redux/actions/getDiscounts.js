@@ -5,7 +5,7 @@ export function getDiscounts() {
 
   return async function(dispatch) {
 
-    var json = await axios.get('http://localhost:3001/discounts');
+    var json = await axios.get('https://dingbell.onrender.com/discounts');
 
     return dispatch({
       type: ActionTypes.GET_DISCOUNTS,

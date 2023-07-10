@@ -6,7 +6,7 @@ export function getOrdersFeed(idResto, token) {
   return async function(dispatch) {
 
     try {
-      var json = await axios.get(`https://restobares-app-api.herokuapp.com/resto/${idResto}/staff/orders`, {
+      var json = await axios.get(`https://dingbell.onrender.com/resto/${idResto}/staff/orders`, {
         headers: {
           'Authorization': `Bearer ${token}`
         }

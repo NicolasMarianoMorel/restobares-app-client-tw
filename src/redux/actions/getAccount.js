@@ -9,7 +9,7 @@ export function getAccount(idResto, token) {
 
     try {
 
-      var json = await axios.get(`http://restobares-app-api.herokuapp.com/resto/${idResto}/admin/account`, {
+      var json = await axios.get(`https://dingbell.onrender.com/resto/${idResto}/admin/account`, {
         headers: {
           'Authorization': `Bearer ${token}`
         }

@@ -1,12 +1,12 @@
 import { ActionTypes } from "../constants";
 import axios from "axios";
 
-export function login(email, password) {  
+export function login(email, password) {
 
-  return async function(dispatch) {
+  return async function (dispatch) {
 
     try {
-      var json = await axios.post("http://restobares-app-api.herokuapp.com/login", {
+      var json = await axios.post("https://dingbell.onrender.com/login", {
         email,
         password
       });
@@ -15,8 +15,8 @@ export function login(email, password) {
         type: ActionTypes.LOG_IN,
         payload: json.data
       });
-    } catch(err) {
-      console.log(err);     
+    } catch (err) {
+      console.log(err);
 
       return dispatch({
         type: ActionTypes.LOG_IN,

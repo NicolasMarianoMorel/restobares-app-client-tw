@@ -6,7 +6,7 @@ export function putTableEating(idResto, idTable, token, idStaff) {
   return async function(dispatch) {
     
     try {
-      var json = await axios.put(`http://restobares-app-api.herokuapp.com/resto/${idResto}/staff/tables`, 
+      var json = await axios.put(`https://dingbell.onrender.com/resto/${idResto}/staff/tables`, 
       {
         idTable: `${idTable}`,
         state: "eating",

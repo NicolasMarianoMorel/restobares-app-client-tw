@@ -7,7 +7,7 @@ export function deleteProduct(idResto, idProduct, token) {
 
     try {
 
-      var json = await axios.delete(`http://restobares-app-api.herokuapp.com/resto/${idResto}/admin/menu/${idProduct}`, {
+      var json = await axios.delete(`https://dingbell.onrender.com/resto/${idResto}/admin/menu/${idProduct}`, {
         headers: {
           'Authorization': `Bearer ${token}`
         }

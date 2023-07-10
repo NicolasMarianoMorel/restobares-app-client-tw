@@ -5,7 +5,7 @@ export function getOrders(idResto, idTable) {
 
   return async function(dispatch) {
     
-    var json = await axios.get(`http://restobares-app-api.herokuapp.com/resto/${idResto}/table/${idTable}/order`);
+    var json = await axios.get(`https://dingbell.onrender.com/resto/${idResto}/table/${idTable}/order`);
 
     return dispatch({
       type: ActionTypes.GET_ORDERS,

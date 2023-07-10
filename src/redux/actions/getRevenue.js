@@ -9,7 +9,7 @@ export function getRevenue(idResto, params, token) {
     try {
 
       if(params === 'Daily') {
-        var json = await axios.get(`https://restobares-app-api.herokuapp.com/resto/${idResto}/admin/revenue`, {
+        var json = await axios.get(`https://dingbell.onrender.com/resto/${idResto}/admin/revenue`, {
           params: {
             filterTime: 'Day'
           },
@@ -24,7 +24,7 @@ export function getRevenue(idResto, params, token) {
         });
       }
       if(params === 'Monthly') {
-        json = await axios.get(`https://restobares-app-api.herokuapp.com/resto/${idResto}/admin/revenue`, {
+        json = await axios.get(`https://dingbell.onrender.com/resto/${idResto}/admin/revenue`, {
           params: {
             filterTime: 'Month'
           },
@@ -39,7 +39,7 @@ export function getRevenue(idResto, params, token) {
         });
       }
       if(params === 'Weekly') {
-        json = await axios.get(`https://restobares-app-api.herokuapp.com/resto/${idResto}/admin/revenue`, {
+        json = await axios.get(`https://dingbell.onrender.com/resto/${idResto}/admin/revenue`, {
           params: {
             filterTime: 'Last7days'
           },
@@ -53,7 +53,7 @@ export function getRevenue(idResto, params, token) {
           payload: json.data
         });
       }
-       json = await axios.get(`https://restobares-app-api.herokuapp.com/resto/${idResto}/admin/revenue`, {
+       json = await axios.get(`https://dingbell.onrender.com/resto/${idResto}/admin/revenue`, {
         params,
         headers: {
           'Authorization': `Bearer ${token}`

@@ -7,7 +7,7 @@ export function putAvailableProduct(idResto, idProduct, token) {
 
     try {
 
-      var json = await axios.put(`http://restobares-app-api.herokuapp.com/resto/${idResto}/staff/menu`, {
+      var json = await axios.put(`https://dingbell.onrender.com/resto/${idResto}/staff/menu`, {
         product_Id: idProduct
       }, {
         headers: {

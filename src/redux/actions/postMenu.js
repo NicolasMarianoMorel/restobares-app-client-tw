@@ -6,7 +6,7 @@ export function postMenu(idResto, menuItem, token) {
   return async function(dispatch) {
 
     try {
-      var json = await axios.post(`http://restobares-app-api.herokuapp.com/resto/${idResto}/admin/menu`, menuItem, {
+      var json = await axios.post(`https://dingbell.onrender.com/resto/${idResto}/admin/menu`, menuItem, {
         headers: {
           'Authorization': `Bearer ${token}`
         }
